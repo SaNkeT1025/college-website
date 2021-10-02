@@ -22,7 +22,9 @@ if(!isset($_SESSION["username"]))
 <body>
 <section id="profile" style="background-color:white;padding-top:2%;padding-bottom: 3%;">
     <div class="container" style="background-image: url(../../images/14.jpg);background-size: cover;padding-top: 3%;">
-      <h1 id="add_faculty_header" style="background:#79ff7d;text-align:center;margin-top:0px;">Profile</h1>
+      <h1 id="add_faculty_header" style="background:#79ff7d;text-align:center;margin-top:0px;">Profile 
+       <button style="float: right;margin-right: 1%;margin-top:4px;"
+            class="btn btn-danger" onclick="window.location.href='profile1.php'"> Dashboard</button></h1>
       <div id="add_faculty_form">
         <div class='row'>
           <?php
@@ -49,7 +51,7 @@ if(!isset($_SESSION["username"]))
                   }
                   $conn->close();
                 }
-                $conn=new mysqli('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
+                $conn=new mysqli('localhost','root','','college');
                 if($conn->connect_error)
                 {
                     die("Error in db connection".$conn->connect_error);
@@ -110,7 +112,7 @@ if(!isset($_SESSION["username"]))
               </strong><span><b>: </b><?php echo $address ;?></span><br>
               <strong style="padding-right: 35px;font-family: 'Zilla Slab', cursive;font-size: 17px;">mobile No
               </strong><span><b>: </b><?php echo $mobileNo ;?></span><br><br>
-           
+         
               <center>
               <button  id="updatebtn" style="border-radius: 20px;" class="btn btn-primary" onclick="window.location.href='profileupdate.php?id=<?php echo $facultyid;?>'">Update Profile</button>
 
