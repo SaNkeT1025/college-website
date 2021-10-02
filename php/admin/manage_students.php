@@ -66,7 +66,7 @@ if(!isset($_SESSION["username"]))
 <input style="width: 94%;margin-left: 3%;" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search with PRN....">
 <?php
 
-    $connection = mysqli_connect("localhost","root","","college");
+    $connection = mysqli_connect('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
     $query="SELECT * FROM student where `status`='approved'";
     $query_run = mysqli_query($connection, $query);
     ?>
