@@ -78,7 +78,7 @@
             class="btn btn-warning" onclick="window.location.href='./profile1.php'">Dashboard</button></h3>
 
     <?php
-    $conn = mysqli_connect ('localhost', 'root', '', 'college') or die(mysqli_error());
+    $conn = mysqli_connect ('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142') or die(mysqli_error());
     $combine=$_SESSION["username"];
     $arr=explode(" ",$combine);
     $femail=$arr[0];
