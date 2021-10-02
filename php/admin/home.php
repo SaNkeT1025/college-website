@@ -183,7 +183,7 @@ else
                         {
                             die("Error in db connection".$conn->connect_error);
                         }
-                        $sql = "SELECT count(*) as total from Student where status='not approved'";
+                        $sql = "SELECT count(*) as total from student where status='not approved'";
                         $result = $conn->query($sql);
                         $row = $result->fetch_assoc();
                         $conn->close();
