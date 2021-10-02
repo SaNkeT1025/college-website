@@ -19,7 +19,7 @@ if(!isset($_SESSION["username"]))
             <?php
                 $val1="";
                 $val1=$_GET['id'];
-                $conn=new mysqli('localhost','root','','college');
+                $conn=new mysqli('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
                 if($conn->connect_error)
                 {
                     die("Error in db connection".$conn->connect_error);
