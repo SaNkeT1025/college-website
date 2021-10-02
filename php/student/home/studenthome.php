@@ -78,7 +78,7 @@
             <div style="border: solid 1px;height: 19rem;"> 
             <center><h4 style="background: #83c2ff;padding: 4px 0 7px 0px;" class="homeh4">Profile</h4></center>
             <?php
-                $conn=new mysqli('localhost','root','','college');
+                $conn=new mysqli('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
                 if($conn->connect_error)
                 {
                     die("Error in db connection".$conn->connect_error);
