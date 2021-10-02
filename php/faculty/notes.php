@@ -187,5 +187,5 @@ button{
 ?>
 <center>
     <button style=" background-color:Green;
- margin-top:20px;" onclick="window.location.href='notesdetails.php'">View Uploaded Syllabus</button>
+ margin-top:20px;" onclick="window.location.href='notesdetails.php'">View Uploaded Notes</button>
 </center>
