@@ -139,7 +139,7 @@ else
                       role="button" aria-haspopup="true" aria-expanded="false">
                       Faculty
                       <?php
-                        $conn=new mysqli('localhost','root','','college');
+                        $conn=new mysqli('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
                         if($conn->connect_error)
                         {
                             die("Error in db connection".$conn->connect_error);
@@ -178,7 +178,7 @@ else
                       role="button" aria-haspopup="true" aria-expanded="false">
                       Student
                       <?php
-                        $conn=new mysqli('localhost','root','','college');
+                        $conn=new mysqli('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
                         if($conn->connect_error)
                         {
                             die("Error in db connection".$conn->connect_error);
@@ -496,7 +496,7 @@ else
             $pieces=explode(" ",$value);
             $val1=$pieces[0];
 
-            $conn=new mysqli('localhost','root','','college');
+            $conn=new mysqli('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
             if($conn->connect_error)
             {
                 die("Error in db connection".$conn->connect_error);
