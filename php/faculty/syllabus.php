@@ -104,7 +104,7 @@ button{
 
         $type = $class."-".$dept;
 
-        $conn = mysqli_connect ('localhost', 'root', '', 'college') or die(mysqli_error());
+        $conn = mysqli_connect ('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142') or die(mysqli_error());
         
             $allow_ext = array('zip','png','jpg','jepg','pdf');
             $pdfname = $_FILES['pdf1']['name'];//storing file name
