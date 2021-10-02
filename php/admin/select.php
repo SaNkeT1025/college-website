@@ -10,7 +10,7 @@
         if(isset($_POST["faculty_id"]))  
         {  
                 $output = '';  
-                $connect = mysqli_connect("localhost", "root", "", "college");  
+                $connect = mysqli_connect('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');  
                 $query = "SELECT * FROM faculty WHERE facultyid = '".$_POST["faculty_id"]."'";  
                 $result = mysqli_query($connect, $query);  
                 $output .= '  
