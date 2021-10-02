@@ -8,7 +8,7 @@ if(!isset($_SESSION["username"]))
 else
 {
     $del=$_GET['id'];
-    $connection = mysqli_connect("localhost","root","","college");
+    $connection = mysqli_connect('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
     $pieces=explode(" ",$del);
     $value=$pieces[0];
     $flag=$pieces[1];
