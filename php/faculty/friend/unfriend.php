@@ -7,7 +7,7 @@ if(!isset($_SESSION["username"]))
             $combine=$_SESSION["username"];
             $arr=explode(" ",$combine);
             $femail=$arr[0];
-            $connection = mysqli_connect("localhost","root","","college");
+            $connection = mysqli_connect('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
             if($connection->connect_error)
             {
                 die("Error in db connection".$conn->connect_error);
