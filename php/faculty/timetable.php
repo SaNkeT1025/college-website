@@ -119,7 +119,7 @@ if(!isset($_SESSION["username"]))
 
         $type = $class."-".$dept;
 
-        $conn = mysqli_connect('localhost', 'root', '', 'college') or die(mysqli_error());
+        $conn = mysqli_connect('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142') or die(mysqli_error());
 
 
 
