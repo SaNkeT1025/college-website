@@ -78,7 +78,7 @@ if(!isset($_SESSION["username"]))
     $arr=explode(" ",$combine);
     $semail=$arr[0];
 
-    $connection = mysqli_connect("localhost","root","","college");
+    $connection = mysqli_connect('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
 
     $query = "select * from `faculty` where `email` = '$semail'";
     $result = $connection->query($query);
