@@ -58,7 +58,7 @@ if(!isset($_SESSION["username"]))
 <?php
     $ass_id=$_GET['id'];
 
-    $connection = mysqli_connect("localhost","root","","college");
+    $connection = mysqli_connect('sql6.freemysqlhosting.net','sql6441142','EmnudfUuyc','sql6441142');
     $query="SELECT assignmentssubmitted.prn,student.fname,student.mname,
         student.lname,assignmentssubmitted.submittedAt,assignmentssubmitted.filename
         from assignmentssubmitted INNER join student 
